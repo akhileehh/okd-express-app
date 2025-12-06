@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: nginx
+spec:
+  to:
+    kind: Service
+    name: nginx
+  port:
+    targetPort: 8080
+  # Uncomment and configure TLS if you want secure route
+  # tls:
+  #   termination: edge
