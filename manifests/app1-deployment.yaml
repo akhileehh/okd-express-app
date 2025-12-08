@@ -16,7 +16,6 @@ spec:
     spec:
       containers:
         - name: app1
-          # Replace this image with your registry/image (built from ./)
-          image: REPLACE_WITH_REGISTRY/app1:latest
+          image: hub.fliplabs.net/app1:v1
           ports:
             - containerPort: 3000
